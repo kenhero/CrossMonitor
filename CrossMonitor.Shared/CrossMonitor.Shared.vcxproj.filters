@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{79e9df89-30d1-4e46-9919-bd703fef198d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data.hpp" />
+    <ClInclude Include="log.hpp" />
+    <ClInclude Include="os.hpp" />
+    <ClInclude Include="utils.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="os_win.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="utils_win.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="utils.cpp" />
+  </ItemGroup>
+</Project>
